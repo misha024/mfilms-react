@@ -1,0 +1,42 @@
+.film-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: min-content;
+    cursor: pointer;
+    grid-gap: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    background-color: var(--theme-background);
+    &:hover {
+        transition: .3s;
+        background-color: var(--theme-background-hover);
+    }
+    & .card-img {
+        background-size: cover !important;
+        width: 270px;
+        height: 350px;
+        border-radius: 10px;
+    }
+    & .card-name {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    & .card-title {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+
+.film-card.placeholder {
+    & .card-name, & .card-title {
+        background: var(--theme-background-hover);
+        color: transparent;
+        border-radius: 10px;
+    }
+    &:hover {
+        cursor: progress;
+        background-color: var(--theme-background)
+    }
+}

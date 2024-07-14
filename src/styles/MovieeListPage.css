@@ -1,0 +1,9 @@
+h1.page-name {
+    font-size: 30px;
+    margin: 1em 0;
+}
+.films-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 25px;
+}

@@ -1,0 +1,28 @@
+.c-radio-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    & .c-radio {
+        display: inline-block;
+        & input[type=radio] {display: none}
+        & label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 80px;
+            height: 50px;
+            user-select: none;
+            transition: .3s all;
+            background: var(--theme-background);
+            border: 1px solid var(--theme-background-hover);
+            &:hover {color: var(--theme-text-color)}
+        }
+        & input[type=radio]:checked + label {background: var(--theme-secondary-color)}
+        & input[type=radio]:disabled + label {
+            background: #1c1c1c;
+            color: #666;
+        }
+    }
+}

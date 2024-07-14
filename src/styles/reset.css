@@ -1,0 +1,53 @@
+/* Обнуление отступов и полей */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+*.hidden {display: none}
+
+/* Установка базового шрифта и цвета текста */
+body {
+    line-height: 1;
+}
+
+li, ul {
+    list-style: none;
+}
+
+/* Убирание подчеркивания у ссылок */
+a, a:hover, a:active, a:hover:active {
+    text-decoration: none;
+    color: unset;
+}
+
+/* Запрет изменения стилей у некоторых элементов в WebKit */
+/* (например, в Safari, Chrome) */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Запрет изменения размера шрифта в IE6 */
+font {
+    vertical-align: inherit;
+}
+
+/* Наследование шрифта от родительского элемента в IE7+ */
+/* (если размер шрифта задан в процентах) */
+/* https://gist.github.com/MoOx/9137295 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
